@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rilesh Shahi - Resume</title>
+  <style>
+    /* Print-friendly and web-clean styles for the resume */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+    :root {
+      --primary: #2c3e50;
+      --secondary: #7f8c8d;
+      --accent: #c9a84c;
+      /* Gold accent from the portfolio */
+      --text: #333333;
+      --bg: #ffffff;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background-color: #f5f5f5;
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .resume-container {
+      background-color: var(--bg);
+      width: 100%;
+      max-width: 800px;
+      padding: 60px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-top: 6px solid var(--accent);
+    }
+
+    header {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 20px;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--primary);
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 0.9rem;
+      color: var(--secondary);
+    }
+
+    .contact-info a {
+      color: var(--secondary);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--primary);
+      border-bottom: 1px solid #eee;
+      padding-bottom: 8px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .skill-item {
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .project {
+      margin-bottom: 20px;
+    }
+
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+
+    .project-title {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .project-link a {
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .project-description {
+      color: var(--secondary);
+      font-size: 0.95rem;
+    }
+
+    .education-item {
+      margin-bottom: 15px;
+    }
+
+    .edu-header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .school {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .degree {
+      color: var(--secondary);
+      font-style: italic;
+    }
+
+    .print-btn {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(201, 168, 76, 0.4);
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    .print-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(201, 168, 76, 0.5);
+    }
+
+    /* Hide the button when actually printing to PDF */
+    @media print {
+      body {
+        background-color: transparent;
+        padding: 0;
+        font-size: 0.9rem;
+      }
+
+      .resume-container {
+        box-shadow: none;
+        max-width: 100%;
+        padding: 0;
+      }
+
+      header {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        margin-bottom: 15px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        padding-bottom: 4px;
+      }
+
+      p {
+        margin-bottom: 8px;
+        line-height: 1.4;
+      }
+
+      .project {
+        margin-bottom: 10px;
+      }
+
+      .project-description {
+        line-height: 1.4;
+      }
+
+      .print-btn {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <button class="print-btn" onclick="window.print()">Save as PDF</button>
+
+  <div class="resume-container">
+    <header>
+      <h1>Rilesh Shahi</h1>
+      <div class="subtitle">Aspiring Full-Stack Developer (MERN)</div>
+      <div class="contact-info">
+        <span>Nepal</span> •
+        <span><a href="mailto:rileshshahi7@gmail.com">rileshshahi7@gmail.com</a></span> •
+        <span><a href="https://github.com/rilesha" target="_blank">github.com/rilesha</a></span> •
+        <span><a href="https://www.linkedin.com/in/rilesh-shahi-5a1a54319/" target="_blank">LinkedIn</a></span>
+      </div>
+    </header>
+
+    <section>
+      <h2>Summary</h2>
+      <p>Passionate BCA student at Himalaya College of Engineering with a strong focus on web development and the MERN
+        stack ecosystem. Dedicated to building responsive, modern applications from scratch. Currently expanding
+        expertise in Next.js and TypeScript to build production-ready software.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-item">• HTML5 & CSS3</div>
+        <div class="skill-item">• JavaScript (ES6+)</div>
+        <div class="skill-item">• React.js</div>
+        <div class="skill-item">• Node.js</div>
+        <div class="skill-item">• Express.js</div>
+        <div class="skill-item">• MongoDB</div>
+        <div class="skill-item">• TypeScript</div>
+        <div class="skill-item">• Next.js</div>
+        <div class="skill-item">• Git & GitHub</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title">FullStack TODO Application</div>
+          <div class="project-link"><a href="https://github.com/rilesha/FullStack-TODO" target="_blank">View Repository
+              ↗</a></div>
+        </div>
+        <div class="project-description">Developed a comprehensive full-stack task management system utilizing React for
+          the dynamic frontend interface and Node.js/Express for robust backend logic and API endpoints. </div>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title">Movie Web Clone</div>
+          <div class="project-link"><a href="https://github.com/rilesha/Movie-Web_Clone" target="_blank">View Repository
+              ↗</a></div>
+        </div>
+        <div class="project-description">Engineered a highly responsive movie browsing application built entirely with
+          React and Vite, focusing on fast load times and clean UI architecture.</div>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title">Amazon E-Commerce UI Clone</div>
+          <div class="project-link"><a href="https://github.com/rilesha/amazonwithjs" target="_blank">View Repository
+              ↗</a></div>
+        </div>
+        <div class="project-description">Constructed a detailed front-end replica of the Amazon storefront interface
+          utilizing vanilla JavaScript, HTML, and advanced CSS to demonstrate layout mastery without frameworks.</div>
+      </div>
+
+      <div class="project">
+        <div class="project-header">
+          <div class="project-title">Browser Text-to-Speech Converter</div>
+          <div class="project-link"><a href="https://github.com/rilesha/Text-to-speech" target="_blank">View Repository
+              ↗</a></div>
+        </div>
+        <div class="project-description">Integrated the native Web Speech API to create a lightweight, browser-based
+          accessibility tool that converts text input into spoken audio.</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="education-item">
+        <div class="edu-header">
+          <div class="school">Himalaya College of Engineering</div>
+          <div class="degree">Nepal</div>
+        </div>
+        <div class="degree">Bachelor of Computer Applications (BCA)</div>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

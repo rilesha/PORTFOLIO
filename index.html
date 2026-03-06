@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Rilesh Shahi — BCA student & aspiring MERN Stack Developer. Explore my projects and skills.">
+  <title>Rilesh Shahi — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">R<span>S</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Skills</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Rilesh <span>Shahi</span></h1>
+      <p class="hero-tagline">Aspiring Full-Stack Developer</p>
+      <p class="hero-description">BCA student at Himalaya College of Engineering, passionate about building modern web
+        applications and constantly learning new technologies.</p>
+      <div class="hero-buttons">
+        <a href="#portfolio" class="btn btn-primary">View My Projects</a>
+        <a href="Rilesh_Shahi_Resume.html" target="_blank" class="btn btn-outline"
+          title="Open and print/save Resume">Download CV</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">13+</span>
+          <span class="stat-label">GitHub Repos</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Passion</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2>Learning &amp; <span>Growing</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image">
+          <div class="about-image-frame">
+            <div class="about-image-placeholder">
+              <img src="Profile.jpg" alt="Rilesh Shahi" class="profile-img">
+            </div>
+            <div class="about-image-border"></div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="about-lead">I'm a BCA student at Himalaya College of Engineering with a deep passion for web
+            development and the MERN stack ecosystem.</p>
+          <p>I love building things from scratch — from simple front-end UIs to full-stack applications. Every project I
+            take on is a chance to learn something new and sharpen my craft. Currently exploring Next.js and TypeScript
+            to level up my skills.</p>
+          <div class="about-skills">
+            <div class="skill-pill">HTML</div>
+            <div class="skill-pill">CSS</div>
+            <div class="skill-pill">JavaScript</div>
+            <div class="skill-pill">React</div>
+            <div class="skill-pill">Node.js</div>
+            <div class="skill-pill">Express.js</div>
+            <div class="skill-pill">MongoDB</div>
+            <div class="skill-pill">TypeScript</div>
+            <div class="skill-pill">Next.js</div>
+          </div>
+          <a href="https://github.com/rilesha" target="_blank" class="btn btn-primary">View GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I'm Learning</span>
+        <h2>Skills &amp; <span>Focus Areas</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" />
+              <line x1="3" y1="9" x2="21" y2="9" />
+              <line x1="9" y1="21" x2="9" y2="9" />
+            </svg>
+          </div>
+          <span class="service-number">01</span>
+          <h3>Frontend Development</h3>
+          <p>Building responsive, interactive user interfaces with HTML, CSS, JavaScript, and React — focusing on clean
+            design and smooth user experiences.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20" />
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+            </svg>
+          </div>
+          <span class="service-number">02</span>
+          <h3>Backend Development</h3>
+          <p>Creating RESTful APIs and server-side logic with Node.js and Express.js — learning to build robust and
+            scalable backend architectures.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+            </svg>
+          </div>
+          <span class="service-number">03</span>
+          <h3>Database &amp; Full Stack</h3>
+          <p>Working with MongoDB for data persistence and combining it with the full MERN stack to build complete,
+            end-to-end web applications.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 20V10" />
+              <path d="M18 20V4" />
+              <path d="M6 20v-4" />
+            </svg>
+          </div>
+          <span class="service-number">04</span>
+          <h3>Modern Frameworks</h3>
+          <p>Currently exploring Next.js and TypeScript to build production-ready, type-safe applications with
+            server-side rendering and modern tooling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2>GitHub <span>Projects</span></h2>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">MERN Stack</span>
+            <h3>FullStack TODO</h3>
+            <p>Full-stack task manager with React frontend &amp; Node.js/Express backend</p>
+            <a href="https://github.com/rilesha/FullStack-TODO" target="_blank" class="portfolio-link">View on GitHub
+              →</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">React + Vite</span>
+            <h3>Movie Web Clone</h3>
+            <p>Movie browsing app built with React &amp; Vite</p>
+            <a href="https://github.com/rilesha/Movie-Web_Clone" target="_blank" class="portfolio-link">View on GitHub
+              →</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">JavaScript</span>
+            <h3>Amazon Clone</h3>
+            <p>E-commerce UI clone with JS, CSS &amp; HTML</p>
+            <a href="https://github.com/rilesha/amazonwithjs" target="_blank" class="portfolio-link">View on GitHub
+              →</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Node.js</span>
+            <h3>Backend Project</h3>
+            <p>Server-side application with Node.js &amp; Express</p>
+            <a href="https://github.com/rilesha/backend-project" target="_blank" class="portfolio-link">View on GitHub
+              →</a>
+          </div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-overlay">
+            <span class="portfolio-category">Web API</span>
+            <h3>Text to Speech</h3>
+            <p>Browser-based text-to-speech converter using Web Speech API</p>
+            <a href="https://github.com/rilesha/Text-to-speech" target="_blank" class="portfolio-link">View on GitHub
+              →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2>Let's <span>Connect</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-lead">Want to collaborate on a project, discuss web development, or just say hi? I'd love to
+            hear from you!</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-label">Email</span>
+              <a href="mailto:rileshshahi7@gmail.com">rileshshahi7@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">College</span>
+              <span>Himalaya College of Engineering</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Location</span>
+              <span>Nepal</span>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/rilesha" target="_blank" class="social-link" aria-label="GitHub">
+              <img src="icons8-github-24.png" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/rilesh-shahi-5a1a54319/" target="_blank" class="social-link"
+              aria-label="LinkedIn">
+              <img src="icons8-linkedin-30.png" alt="LinkedIn" class="social-icon">
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder=" " required>
+            <label for="name">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder=" " required>
+            <label for="email">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="subject" name="subject" placeholder=" ">
+            <label for="subject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" rows="5" placeholder=" " required></textarea>
+            <label for="message">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="logo footer-logo">R<span>S</span></a>
+        <div class="footer-socials">
+          <a href="https://github.com/rilesha" target="_blank" class="footer-social-link" aria-label="GitHub">
+            <img src="icons8-github-24.png" alt="GitHub" class="social-icon">
+          </a>
+          <a href="https://www.linkedin.com/in/rilesh-shahi-5a1a54319/" target="_blank" class="footer-social-link"
+            aria-label="LinkedIn">
+            <img src="icons8-linkedin-30.png" alt="LinkedIn" class="social-icon">
+          </a>
+        </div>
+        <p>&copy; 2026 Rilesh Shahi. All rights reserved.</p>
+        <p class="footer-tagline">Learning every day. Building the future.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.service-card, .portfolio-item, .testimonial-card, .about-grid, .contact-grid, .section-header').forEach(el => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
+    });
+
+    // Form submission via Formspree
+    document.getElementById('contact-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+      const btn = this.querySelector('button[type="submit"]');
+      const originalText = btn.textContent;
+      btn.textContent = 'Sending...';
+
+      try {
+        const response = await fetch('https://formspree.io/f/mdawnrlw', { // Replace 'YOUR_FORM_ID_HERE' with your actual Formspree endpoint ID later if you make an account
+          method: 'POST',
+          body: new FormData(this),
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          btn.textContent = 'Message Sent ✓';
+          btn.style.background = 'linear-gradient(135deg, #2ecc71, #27ae60)';
+          this.reset();
+        } else {
+          btn.textContent = 'Error Sending';
+          btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
+        }
+      } catch (error) {
+        btn.textContent = 'Error Sending';
+        btn.style.background = 'linear-gradient(135deg, #e74c3c, #c0392b)';
+      }
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+      }, 3000);
+    });
+
+    // Stat counter animation
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const text = el.textContent;
+          const num = parseInt(text);
+          const suffix = text.replace(/[0-9]/g, '');
+          let current = 0;
+          const increment = Math.ceil(num / 60);
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= num) {
+              current = num;
+              clearInterval(timer);
+            }
+            el.textContent = current + suffix;
+          }, 30);
+          statsObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    statNumbers.forEach(stat => statsObserver.observe(stat));
+  </script>
+</body>
+
+</html>
