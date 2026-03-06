@@ -1216,14 +1216,25 @@ ul {
         backdrop-filter: blur(20px);
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 32px;
-        padding: 40px;
+        padding: 40px 16px;
+        /* Reduced side padding to give elements more room */
         transition: right 0.4s ease;
         border-left: 1px solid rgba(201, 168, 76, 0.1);
     }
 
     .nav-links.active {
         right: 0;
+    }
+
+    .nav-cta {
+        padding: 10px 16px !important;
+        /* Slightly smaller padding for the button on mobile */
+        font-size: 0.72rem;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        /* Forces text onto a single line */
     }
 
     .hamburger {
